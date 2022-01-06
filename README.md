@@ -1,3 +1,2 @@
 # My_Projects
-It is the repository which contains all the projects I have done realted to deep learning , machine learning while I was learning . I have upladed IPYNB file for each project and many of the projects acccuracies were excellent. I have not uploaded the data I have used for training because data is too large.
-
+It's a repository that contains all of the deep learning and machine learning projects I've worked on while learning. I've uploaded the IPYNB files for each project, and several of them had outstanding accuracy. Because the data I used for training is too vast, I have not uploaded it.
