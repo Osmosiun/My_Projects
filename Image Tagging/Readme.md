@@ -1,10 +1,10 @@
-﻿Name -: Manav Garg Mail address -:[ 19bce062@nirmauni.ac.in ](mailto:19bce062@nirmauni.ac.in)Contact Number -: 7698162164 
+
 
 **Image Tagging** 
 
-**Abstract**  
+**Introduction**  
 
-` `I tried to explain how to train the colour detection model and the dress type classification model (kurti, saree, etc.) in this article. I also demonstrated how I used Django to create a website and integrate my models into it. 
+` `An image tagging model was created to determine the colour and kind of women's clothing. Django was used to incorporate the model into a website.
 
 **Data Creation** 
 
@@ -13,12 +13,10 @@ In a short amount of time, I created the data using the selenium a web scraping 
 **Colour detection** 
 
 To efficiently detect colour in the image, I initially used the open cv grab cut technique to extract the foreground. 
-
-![](Aspose.Words.0fb96eab-803c-40d2-98e8-1b1bfeeaf912.001.png)![](Aspose.Words.0fb96eab-803c-40d2-98e8-1b1bfeeaf912.002.png)
+![Aspose Words 0fb96eab-803c-40d2-98e8-1b1bfeeaf912 001](https://user-images.githubusercontent.com/86610832/167624599-fded92b4-8a03-4145-bfab-4af6866a58a3.png) ![Aspose Words 0fb96eab-803c-40d2-98e8-1b1bfeeaf912 002](https://user-images.githubusercontent.com/86610832/167624670-018f149c-89db-4f06-b3a7-0bee64085302.png)
 
 Then I used k-means clustering to extract the image's top two colours, which were black and clothing colours. 
-
-![](Aspose.Words.0fb96eab-803c-40d2-98e8-1b1bfeeaf912.003.png)
+![Aspose Words 0fb96eab-803c-40d2-98e8-1b1bfeeaf912 003](https://user-images.githubusercontent.com/86610832/167625190-676236b2-1f8e-40a8-87a5-241c6fe7f49e.png)
 
 The closest common colour is then determined using Euclidian distance. The closest colour in the above should be orange, and the results were also orange. 
 
@@ -33,8 +31,6 @@ Classes -: kurta, saree, lehenga, top, dress, shirt. Dress\_type\_classification
 **Website** 
 
 The website was made with the help of Django and bootstrap. It was built around the models. So anytime the user uploads the image the dress colour and its type is presented to the user. 
-
-*To see the model integration with website open* -: " imageuploader- main\imageuploader-main\myapp\views.py" 
 
 See ***sample\_video.mp4*** for the website demo. The Screen Recording was not able to fully capture. 
 
